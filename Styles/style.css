@@ -6,6 +6,7 @@ body {
   min-height: 100%;
   min-height: 100vh;
   margin: 0;
+  background: linear-gradient(to bottom right, #FDEE30 -50%, #ffffff 100%);
 }
 
 div {
@@ -79,10 +80,67 @@ ul.topnav li a:hover {
 
 .main-content {
   transition: margin-left .5s;
-  padding: 16px;
+  margin: 35px 300px 35px 300px;
+  height: 600px;
+  background-color: #116466;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  /* padding: 0 10px; */
 }
 
-@media screen and (max-height: 450px) {
+.main-content::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.responsive-img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform .5s ease;
+}
+
+.image-hover :hover {
+  transform: scale(1.5);
+}
+
+.valign-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+.max-content {
+  height: 350px;
+  overflow-y: scroll;
+}
+
+.max-content::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+@media screen and (max-height: 800px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
+  .main-content {
+    margin: 35px 250px 35px 250px;
+    height: 600px;
+  }
+
 }
+

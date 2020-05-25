@@ -1,0 +1,44 @@
+.character-list-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    /* margin: 0 -10px; */
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.character-container {
+    height: 100%;
+    cursor: pointer;
+}
+
+.lore-container {
+    padding: 4%;
+    height: 40%;
+    margin-top: 10%;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 10px;
+}
+
+
+.lore-img-wrapper {
+    width: 400px !important;    
+    height: min-content;
+    margin-right: 6%;
+}
+
+
+@media screen and (max-height: 800px) {
+
+    .character-container {
+        height: 100%;
+    }
+
+    .lore-img-wrapper {
+        width: 400px !important;    
+        height: min-content;
+        margin-right: 6%;
+    }
+
+}
