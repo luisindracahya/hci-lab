@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Xtream Chaser</title>
 	<link rel="stylesheet" href="../Styles/style.css">
+	<link rel="stylesheet" href="../Styles/home.css">
 </head>
 <body>
-	<div id="mySidenav" class="sidenav">
-		<a href="home.html">Home</a>
-		<a href="galleries.html">Galleries</a>
-		<a href="characters.html">Characters</a>
-		<a href="lore.html">Lore</a>
-		<a href="register.html">Pre-Register</a>
-	</div>
-
 	<ul class="topnav">
-		<li><a id="menu_dropdown">Menu</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Menu</a>
+			<div class="dropdown-content">
+				<a href="home.html">Home</a>
+				<a href="galleries.html">Galleries</a>
+				<a href="characters.html">Characters</a>
+				<a href="lore.html">Lore</a>
+				<a href="register.html">Pre-Register</a>
+			</div>
+		  </li>
 	</ul>
 
 
@@ -24,12 +26,61 @@
 
 	<div class="main-content">
 		<!-- CODE GOES HERE -->
-		<h1>Xtream Chaser</h1>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		<img class="responsive-img" src="../Image/pubg-1.jpg">
+		</div>
+	
+		<div class="mySlides fade">
+		<img class="responsive-img" src="../Image/godofwar-1.jpg">
+		</div>
+	
+		<div class="mySlides fade">
+		<img class="responsive-img"	src="../Image/lycan-1.jpg">
+		</div>
+	
+		<!-- Next and previous buttons -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<!-- The dots/circles -->
+	<div class="center-align">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+
+
+	<div class="text-wrapper">
+		<h1>
+			Xtream Chaser
+		</h1>
+		<p>
+			This is a fighting game. So cool that you would want to buy two just for the sake of collecting it. <br>
+			Also... weebs are disgusting. <br>
+			<h6>stop watching anime, and get a life</h6>
+		</p>
+	</div>
+		
+	
+
+
 	</div>
 	
+	<!--footer-->
+	<div class="footer-wrapper">
+		<div class="footer-content center-align" id="footer-content">
+			copyright
+		</div>
+	</div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="../Scripts/layout.js"></script>
-
+<script type="text/javascript" src="../Scripts/home.js"></script>
 </html>

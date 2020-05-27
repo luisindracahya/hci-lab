@@ -7,16 +7,17 @@
 	<link rel="stylesheet" href="../Styles/style.css">
 </head>
 <body>
-	<div id="mySidenav" class="sidenav">
-		<a href="home.html">Home</a>
-		<a href="galleries.html">Galleries</a>
-		<a href="characters.html">Characters</a>
-		<a href="lore.html">Lore</a>
-		<a href="register.html">Pre-Register</a>
-	</div>
-
 	<ul class="topnav">
-		<li><a id="menu_dropdown">Menu</a></li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Menu</a>
+			<div class="dropdown-content">
+				<a href="home.html">Home</a>
+				<a href="galleries.html">Galleries</a>
+				<a href="characters.html">Characters</a>
+				<a href="lore.html">Lore</a>
+				<a href="register.html">Pre-Register</a>
+			</div>
+		  </li>
 	</ul>
 
 
@@ -24,12 +25,58 @@
 
 	<div class="main-content">
 		<!-- CODE GOES HERE -->
-		<h1>Xtream Chaser</h1>
+		<div class="form-wrapper">
+			<label for="email">Input your email</label>
+			<input id="email" type="email" placeholder="example@domain.com">
+
+			<label for="username">Input your username</label>
+			<input type="text" name="" id="username">
+
+			<label for="password">Input your password</label>
+			<input type="password" name="" id="username">
+
+			<label for="gender">Choose your gender</label>
+			<div class="left-align valign-wrapper">
+				<input type="radio" name="gender" id="male">Male&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="radio" name="gender" id="female">Female
+			</div>
+
+			<label for="DOB">Input your date of birth</label>
+			<input type="date" name="" id="DOB">
+
+			<label for="nationality">Choose your nationality</label>
+			<select name="nationality" id="nationality">
+				<option value="Erangel">Erangel</option>
+				<option value="Miranmar">Miranmar</option>
+				<option value="Sanhok">Sanhok</option>
+				<option selected value="Other">Other</option>
+			</select>
+
+			<div class="left-align valign-wrapper" id="checkbox_wrapper">
+				<input type="checkbox" id="chekbox">I agree to terms and condition.
+			</div>
+
+			<div class="center-align submit-btn-wrapper">
+				<div type="submit" class="button">
+					<p>Submit</p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--footer-->
+	<div class="footer-wrapper">
+		<div class="footer-content center-align" id="footer-content">
+			copyright
+		</div>
 	</div>
 	
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="../Scripts/layout.js"></script>
+<script type="text/javascript" src="../Scripts/register.js"></script>
 
 </html>

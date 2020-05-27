@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Xtream Chaser</title>
 	<link rel="stylesheet" href="../Styles/style.css">
+	<link rel="stylesheet" href="../Styles/lore.css">
 </head>
 <body>
-	<div id="mySidenav" class="sidenav">
+	<!-- <div id="mySidenav" class="sidenav">
 		<a href="home.html">Home</a>
 		<a href="galleries.html">Galleries</a>
 		<a href="characters.html">Characters</a>
 		<a href="lore.html">Lore</a>
 		<a href="register.html">Pre-Register</a>
-	</div>
+	</div> -->
+
+	<!-- <div class="dropdown" style="float:left;">
+		<button class="dropbtn">Menu></button>
+		<div class="dropdown-content" class="left-align">
+			<a href="home.html">Home</a>
+			<a href="galleries.html">Galleries</a>
+			<a href="characters.html">Characters</a>
+			<a href="lore.html">Lore</a>
+			<a href="register.html">Pre-Register</a>
+		</div>
+	</div> -->
 
 	<ul class="topnav">
-		<li><a id="menu_dropdown">Menu</a></li>
+		<!-- <li><a id="menu_dropdown">Menu</a></li> -->
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+			<div class="dropdown-content">
+				<a href="home.html">Home</a>
+				<a href="galleries.html">Galleries</a>
+				<a href="characters.html">Characters</a>
+				<a href="lore.html">Lore</a>
+				<a href="register.html">Pre-Register</a>
+			</div>
+		  </li>
 	</ul>
 
 
@@ -26,7 +48,14 @@
 		<!-- CODE GOES HERE -->
 		<h1>Xtream Chaser</h1>
 	</div>
-	
+
+	<!--footer-->
+	<div class="footer-wrapper">
+		<div class="footer-content center-align" id="footer-content">
+			copyright
+		</div>
+	</div>
+
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
