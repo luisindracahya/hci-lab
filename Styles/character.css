@@ -36,9 +36,17 @@
     }
 
     .lore-img-wrapper {
-        width: 400px !important;    
+        width: auto !important;    
         height: min-content;
-        margin-right: 6%;
+        margin-right: 0 !important;
+    }
+
+    .lore-container {
+        display: inline;
+    }    
+
+    .lore-desc-wrapper {
+        padding: 10px
     }
 
 }

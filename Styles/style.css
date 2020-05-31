@@ -317,8 +317,19 @@ input[type="checkbox"] {
   .sidenav a {font-size: 18px;}
 
   .main-content {
-    margin: 35px 250px 35px 250px;
+    margin: 10px 40px 40px 40px;
     height: 600px;
+    /* margin-bottom: 40px; */
+  }
+
+  .footer-wrapper {
+    position: fixed;
+  }
+
+
+  .max-content {
+    height: auto !important;
+    padding-bottom: 10px;
   }
 
 }
