@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Xtream Chaser</title>
 	<link rel="stylesheet" href="../Styles/style.css">
+	<link rel="stylesheet" href="../Styles/register.css">
 </head>
 <body>
 	<ul class="topnav">
@@ -28,36 +26,44 @@
 		<div class="form-wrapper">
 			<label for="email">Input your email</label>
 			<input id="email" type="email" placeholder="example@domain.com">
+			<div class="validation hide" id="email_validation"></div>
 
 			<label for="username">Input your username</label>
 			<input type="text" name="" id="username">
+			<div class="validation hide" id="username_validation"></div>
 
 			<label for="password">Input your password</label>
-			<input type="password" name="" id="username">
+			<input type="password" name="" id="password">
+			<div class="validation hide" id="password_validation"></div>
 
 			<label for="gender">Choose your gender</label>
 			<div class="left-align valign-wrapper">
 				<input type="radio" name="gender" id="male">Male&nbsp;&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="gender" id="female">Female
 			</div>
+			<div class="validation hide" id="gender_validation"></div>
 
 			<label for="DOB">Input your date of birth</label>
-			<input type="date" name="" id="DOB">
+			<input type="text" name="" id="DOB" placeholder="dd-mm-yyyy">
+			<div class="validation hide" id="dob_validation"></div>
 
 			<label for="nationality">Choose your nationality</label>
 			<select name="nationality" id="nationality">
+				<option selected value="">Choose nationality</option>
 				<option value="Erangel">Erangel</option>
 				<option value="Miranmar">Miranmar</option>
 				<option value="Sanhok">Sanhok</option>
-				<option selected value="Other">Other</option>
+				<option value="Other">Other</option>
 			</select>
+			<div class="validation hide" id="nationality_validation"></div>
 
 			<div class="left-align valign-wrapper" id="checkbox_wrapper">
-				<input type="checkbox" id="chekbox">I agree to terms and condition.
+				<input type="checkbox" id="checkbox">I agree to terms and condition.
 			</div>
+			<div class="validation hide" id="checkbox_validation"></div>
 
 			<div class="center-align submit-btn-wrapper">
-				<div type="submit" class="button">
+				<div type="submit" class="button" id="btn_submit">
 					<p>Submit</p>
 				</div>
 			</div>
@@ -72,9 +78,11 @@
 			copyright
 		</div>
 	</div>
+
+
+	<a href="../Views/home.html" class="hide" id="redirect_div">dont click me</a>
 	
 </body>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="../Scripts/layout.js"></script>
 <script type="text/javascript" src="../Scripts/register.js"></script>

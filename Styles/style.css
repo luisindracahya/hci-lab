@@ -168,6 +168,8 @@ input {
 input[type="radio"] {
   cursor: pointer;
   display: inline;
+  width: auto;
+  margin: 0 5px;
 }
 
 .footer-wrapper {

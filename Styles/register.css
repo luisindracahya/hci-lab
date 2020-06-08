@@ -1,0 +1,12 @@
+.hide {
+    display: none;
+}
+
+.validation {
+    color: violet;
+    font-size: 16px;
+}
+
+.main-content {
+    height: auto;
+}
