@@ -122,7 +122,7 @@ function validateEmail(email) {
 function validatePassword(password) {
 
     if (password == null || password.length <= 7) {
-        return "password cannot be empty";
+        return "password must be at least 8 characters long";
     }
 
 
