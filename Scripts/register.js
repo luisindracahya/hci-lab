@@ -144,7 +144,7 @@ function validatePassword(password) {
     if (hasNumber == false)
         return "password must have number";
     if (hasSmallCharacter == false || hasBigCharacter == false)
-        return "passwrod must consists of small and big letter"
+        return "password must consists of small and big letter"
 
     if (hasNumber == true && hasSmallCharacter == true && hasBigCharacter == true ) {
         return "";
