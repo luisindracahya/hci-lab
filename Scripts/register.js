@@ -6,10 +6,10 @@ let dob = document.getElementById("DOB");
 let ddl_nationality = document.getElementById("nationality");
 let checkbox = document.getElementById("checkbox");
 let submitBtn = document.getElementById("btn_submit");
-let checkbox_wrapper = document.getElementById("checkbox_wrapper");
+let checkbox_label = document.getElementById("checkbox_label");
 
 
-checkbox_wrapper.addEventListener('click', function (e) {
+checkbox_label.addEventListener('click', function (e) {
     checkbox.click();
 })
 

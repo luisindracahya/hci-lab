@@ -181,6 +181,10 @@ input[type="radio"] {
   position: absolute;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .footer-content {
   font-size: 16px;
   color: #FFFFFF;
