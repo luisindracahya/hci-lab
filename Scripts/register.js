@@ -89,6 +89,7 @@ submitBtn.addEventListener('click', function (e) {
 
 
     if (validationFlag == 0) {
+        alert("You have successfully pre-registered");
         document.getElementById('redirect_div').click();
     }
 
@@ -126,9 +127,9 @@ function validatePassword(password) {
     }
 
 
-    let hasNumber;
-    let hasSmallCharacter;
-    let hasBigCharacter;
+    let hasNumber = false;
+    let hasSmallCharacter = false;
+    let hasBigCharacter = false;
 
     for (let i = 0 ; i < password.length; i++){
         var charCode = password.charCodeAt(i);
