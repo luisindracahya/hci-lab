@@ -13,7 +13,7 @@
 			<a href="javascript:void(0)" class="dropbtn">Menu</a>
 			<div class="dropdown-content">
 				<a href="home.html">Home</a>
-				<a href="galleries.html">Galleries</a>
+				<a href="gallery.html">Galleries</a>
 				<a href="characters.html">Characters</a>
 				<a href="lore.html">Lore</a>
 				<a href="register.html">Pre-Register</a>
@@ -28,9 +28,7 @@
 		<button type="button" class="expandable">EVENT</button>
 		<div class="event-container">
 			<div class="gallery">
-				<a href="../Image/minigame.jpg">
-					<img src="../Image/minigame.jpg" alt="Minigame">
-				</a>
+					<img id="image-to-open1" class="image-to-open" src="../Image/minigame.jpg" alt="PVP Mode">
 			</div>
 			<div class="news">
 				<h3>
@@ -41,9 +39,7 @@
 				</p>
 			</div>
 			<div class="gallery">
-				<a href="../Image/new-hero.jpg">
-					<img src="../Image/new-hero.jpg" alt="New Hero">
-				</a>
+					<img id="image-to-open2" class="image-to-open" src="../Image/new-hero.jpg" alt="New Hero">
 			</div>
 			<div class="news">
 				<h3>
@@ -59,47 +55,43 @@
 		<button type="button" class="expandable">GAMEPLAY</button>
 		<div class="gallery-container">
 				<div class="gallery">
-					<a href="../Image/hanzo-gameplay.jpg">
-						<img src="../Image/hanzo-gameplay.jpg" alt="Hanzo Gameplay">
-					</a>
+						<img id="image-to-open3" class="image-to-open" src="../Image/hanzo-gameplay.jpg" alt="Hanzo Gameplay">
 					<div class="caption">Hanzo character gameplay</div>
 				</div>
 
 				<div class="gallery">
-					<a href="../Image/genji-gameplay.jpg">
-						<img src="../Image/genji-gameplay.jpg" alt="Genji Gameplay">
-					</a>
+						<img id="image-to-open4" class="image-to-open" src="../Image/genji-gameplay.jpg" alt="Genji Gameplay">
 					<div class="caption">Genji character gameplay</div>
 				</div>
 				
 				<div class="gallery">
-					<a href="../Image/zenyatta-gameplay.jpg">
-						<img src="../Image/zenyatta-gameplay.jpg" alt="Zenyatta Gameplay">
-					</a>
+						<img id="image-to-open5" class="image-to-open" src="../Image/zenyatta-gameplay.jpg" alt="Zenyatta Gameplay">
 					<div class="caption">Zenyatta character gameplay</div>
 				</div>
 
 				<div class="gallery">
-					<a href="../Image/boss.jpg">
-						<img src="../Image/boss.jpg" alt="Boss Battle">
-					</a>
+						<img id="image-to-open6" class="image-to-open" src="../Image/boss.jpg" alt="Boss Battle">
 					<div class="caption">Xtream Chaser Boss Battle</div>
 				</div>
 				
 				<div class="gallery">
-					<a href="../Image/team-assemble.jpg">
-						<img src="../Image/team-assemble.jpg" alt="Preparation Screen">
-					</a>
+						<img id="image-to-open7" class="image-to-open" src="../Image/team-assemble.jpg" alt="Preparation Screen">
 					<div class="caption">Xtream Chaser preparation screen</div>
 				</div>
 				
 				<div class="gallery">
-					<a href="../Image/cgi.jpg">	
-						<img src="../Image/cgi.jpg" alt="CGI">
-					</a>
+						<img id="image-to-open8" class="image-to-open" src="../Image/cgi.jpg" alt="CGI">
 					<div class="caption">Xtream Chaser in-game CGI</div>
 				</div>
+		</div>
 
+		<div id="modal-dialogue-box">
+			<span id="x-close"> 
+				X
+			</span>
+			<img id="modal-image">
+			<div id="modal-image-caption">
+			</div>
 		</div>
 
 	</div>

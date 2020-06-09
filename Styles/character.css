@@ -1,7 +1,6 @@
 .character-list-container {
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    /* margin: 0 -10px; */
     grid-template-columns: repeat(3, 1fr);
 }
 

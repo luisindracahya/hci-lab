@@ -79,23 +79,16 @@ li.dropdown {
 
 .main-content {
   transition: margin-left .5s;
-  /* margin: 35px 300px 35px 300px; */
   margin: 10px 40px 40px 40px;
   height: 600px;
   background-color: #116466;
   overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  /* padding: 0 10px; */
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
   padding-bottom: 10px;
 }
 
-/* .main-content {
-  margin: 10px 40px 40px 40px;
-  height: 600px;
-} */
-
-.main-content::-webkit-scrollbar { /* WebKit */
+.main-content::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -134,7 +127,7 @@ li.dropdown {
   overflow-y: scroll;
 }
 
-.max-content::-webkit-scrollbar { /* WebKit */
+.max-content::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -200,7 +193,7 @@ input[type="radio"] {
 }
 
 input:-webkit-autofill {
-  -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+  -webkit-animation-delay: 1s;
   -webkit-animation-name: autofill;
   -webkit-animation-fill-mode: both;
 }
@@ -221,11 +214,11 @@ select {
   background: #2c3e50;
   background-image: none;
 }
-/* Remove IE arrow */
+
 select::-ms-expand {
   display: none;
 }
-/* Custom Select */
+
 .select {
   position: relative;
   display: flex;
@@ -236,6 +229,7 @@ select::-ms-expand {
   overflow: hidden;
   border-radius: .25em;
 }
+
 select {
   flex: 1;
   padding: 0 .5em;
@@ -244,7 +238,7 @@ select {
   height: 30px;
   width: 100%;
 }
-/* Arrow */
+
 .select::after {
   content: '\25BC';
   position: absolute;
@@ -258,24 +252,23 @@ select {
   -o-transition: .25s all ease;
   transition: .25s all ease;
 }
-/* Transition */
+
 .select:hover::after {
   color: #f39c12;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
   color: darkseagreen;
-  opacity: 1; /* Firefox */
+  opacity: 1;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
   color: aquamarine;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
   color: aquamarine;
 }
-
 
 input[type="checkbox"] {
   width: auto;
@@ -302,7 +295,6 @@ input[type="checkbox"] {
   transform: translateX(-50%) translateY(-50%);
 }
 
-
 .button p {
   text-align: center;
   text-transform: uppercase;
@@ -327,12 +319,9 @@ input[type="checkbox"] {
   bottom: -30px;
 }
 
-
 body::-webkit-scrollbar {
   display: none;
 }
-
-
 
 @media screen and (max-height: 800px) {
   .sidenav {padding-top: 15px;}
@@ -341,10 +330,7 @@ body::-webkit-scrollbar {
   .main-content {
     margin: 10px 40px 40px 40px;
     height: 600px;
-    /* margin-bottom: 40px; */
   }
-
-
 
   .max-content {
     height: auto !important;

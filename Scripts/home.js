@@ -13,8 +13,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = $(".mySlides");            /*************    Jquery  ************* */
-  var dots = $(".dot");            /*************    Jquery  ************* */
+  var slides = $(".mySlides");           
+  var dots = $(".dot");            
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
