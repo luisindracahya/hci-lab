@@ -1,4 +1,7 @@
-
+#logo {
+  height: 42px;
+  width: auto;
+}
 
 body {
   font-family: Arial, Helvetica, sans-serif;

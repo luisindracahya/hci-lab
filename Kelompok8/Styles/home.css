@@ -7,7 +7,6 @@
     position: relative;
 }
 
-
 .prev, .next {
     cursor: pointer;
     position: absolute;
