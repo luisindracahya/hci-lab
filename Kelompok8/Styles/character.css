@@ -49,3 +49,25 @@
     }
 
 }
+
+@media screen and (max-height: 1024px) {
+
+    .character-container {
+        height: 100%;
+    }
+
+    .lore-img-wrapper {
+        width: auto !important;    
+        height: min-content;
+        margin-right: 0 !important;
+    }
+
+    .lore-container {
+        display: inline;
+    }    
+
+    .lore-desc-wrapper {
+        padding: 10px
+    }
+
+}
