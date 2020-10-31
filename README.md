@@ -1,5 +1,8 @@
 # hci-lab
 
+### forked from repository that i contributed on:
+### https://github.com/StephenLeonardo/hci-lab
+
 ### Static website made for a fictional game, Xtream Chaster
 ### Laboratory Assignment for Human-Computer Interaction course
 
